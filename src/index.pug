@@ -1,1 +1,15 @@
 extends _component/layout/layout
+block super-config
+ -
+    let title = 'A new generation of thinkers'
+    let description = 'The thoughts that awake the uncouncoius'
+block awesome-content
+    h2 This is the main landing page
+    p This blog will be used with dynamic themes
+    ul  
+        each color, key in colorList
+         li
+            button.theme_button(data-color-dark=color.colorDark, data-color-normal=color.colorNormal)=key
+    script
+        include _asset/js/color.js
+

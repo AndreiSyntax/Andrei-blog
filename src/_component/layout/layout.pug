@@ -2,6 +2,9 @@ docutype html
 html
     block super-config
     head
-
+        title
+        meta(name="description", content='description')
+        link(rel='stylesheet', href='style.css')
     body
+        include ../welcome/welcome
         block awesome-content
