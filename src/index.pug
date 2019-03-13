@@ -55,11 +55,11 @@ block awesome-content
     p This blog will be used with dynamic themes
     ul  
         each color, key in colorList
-         li
-            button.theme_button(
-                style=`background-color: ${color.colorDark}`
-                data-color-dark=color.colorDark, 
-                data-color-normal=color.colorNormal
+            li
+                button.theme_button(
+                    style=`background-color: ${color.colorDark}`
+                    data-color-dark=color.colorDark, 
+                    data-color-normal=color.colorNormal
                 )=key
     script
         include _asset/js/color.js
