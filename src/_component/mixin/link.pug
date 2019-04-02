@@ -1,0 +1,7 @@
+mixin link({link , title, label})
+    -
+        linkValue = link || 'https://github.com/AndreiSyntax'
+    a(
+        href=linkValue,
+        title=title
+    )=label
